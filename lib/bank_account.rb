@@ -1,4 +1,4 @@
-require_relative "transfer"
+
 
 class BankAccount
     attr_accessor :deposit, :balance, :status
@@ -19,7 +19,7 @@ class BankAccount
     end
 
     def valid?
-        if self.status == "open" && self.balance > 0 
+        if @status == "open" && @balance > 0 
             true
         else
             false
